@@ -13,7 +13,7 @@
   /* --bg-color: #273c4f; */
   --bg-color: #AEE2FF;
   --second-bg-color:#E6FFFD ;
-  --text-color: black
+  --text-color: black;
   --second-color:black;
   /* --main-color: #61dc14; */
   --main-color:#00ADB5 ;
@@ -43,7 +43,7 @@ header {
   padding: 22px 15%;
   border-bottom: 1px solid transparent;
   transition: all.45s ease;
-  background-color: var(#E6FFFD)
+  background-color: var(#E6FFFD);
 }
 
 .logo {

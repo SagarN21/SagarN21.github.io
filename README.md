@@ -47,6 +47,35 @@ To run this project locally, follow these steps:
    ```
 
 3. Configure environment variables (if necessary) for secrets like database connection strings or API keys.
+4. Contact Form Handling with Email.js
+This portfolio website utilizes Email.js to handle contact form submissions. Email.js is a simple and powerful service for sending emails using client-side technologies.
+
+Setup Email.js
+To set up Email.js for your contact form, follow these steps:
+
+Sign up for an account on the Email.js website.
+
+Once logged in, create a new email service. This service will allow you to send emails using your own email provider (e.g., Gmail, Outlook).
+
+Obtain your User ID and Template ID from the Email.js dashboard. You'll need these to authenticate and send emails.
+
+Configuration
+In the project code, you will find a file called contactForm.js or similar, where the contact form is implemented. Open this file and look for the configuration section. You may need to update the following variables with your own Email.js credentials:
+
+javascript
+Copy code
+const emailjsConfig = {
+  serviceID: 'your_service_id',   // Replace with your Email.js service ID
+  templateID: 'your_template_id', // Replace with your Email.js template ID
+  userID: 'your_user_id',         // Replace with your Email.js user ID
+};
+Make sure to replace 'your_service_id', 'your_template_id', and 'your_user_id' with the values you obtained from your Email.js dashboard.
+
+Usage
+With Email.js configured, the contact form submissions will be sent to the specified email address as per your Email.js template configuration.
+
+Deployment Considerations
+When deploying your portfolio website to a production environment, ensure that your Email.js credentials are securely stored and that you follow best practices for environment variable management to protect sensitive information.
 
 ## Usage
 Once the project is set up, you can:
@@ -62,6 +91,7 @@ Once the project is set up, you can:
 
 ## Deployment
 To deploy this website, you can use hosting platforms like Netlify, Vercel, or Heroku for the front end and platforms like Heroku or AWS for the back end (if applicable). Configure the necessary environment variables and update the deployment scripts as needed.
+
 
 ## Contributing
 Contributions are welcome! If you have suggestions, bug reports, or feature requests, please open an issue on the GitHub repository. If you'd like to contribute directly, please feel free to fix the repository and submit a pull request.

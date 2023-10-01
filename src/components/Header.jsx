@@ -65,7 +65,7 @@ const Header = () => {
               <a
                  href={CV}
                  target="_blank"
-                 download
+                 download = "Sagar-Naik-Resume.pdf"
                  id="resume-link-1"
                  className="nav-link resume"
                  onClick={()=>window.open("https://drive.google.com/file/d/1UkgB99_4WGdsZg57oMpTfZx6i8ZufexR/view?usp=sharing")}

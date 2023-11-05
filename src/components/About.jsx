@@ -33,9 +33,15 @@ const About = () => {
           <button id="resume-button-2" style={{ marginTop: "5px" }}>
             <a
               href={CV}
-              download
               target="_blank"
+              download="Sagar-Naik-Resume.pdf"
               id="resume-link-2"
+              className="nav-link resume"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1UkgB99_4WGdsZg57oMpTfZx6i8ZufexR/view?usp=sharing"
+                )
+              }
 
             >
               <span>

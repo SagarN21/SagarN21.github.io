@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import {AiOutlineHome,AiOutlineMenu} from "react-icons/ai";
+
+
 
 function DropDown({ options, onSelect }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +19,7 @@ function DropDown({ options, onSelect }) {
         className="dropdown-toggle"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {selectedOption}
+       <AiOutlineMenu style={{color:'black'}}/>
       </div>
       {isOpen && (
         <div className="dropdown-menu">
@@ -25,7 +28,8 @@ function DropDown({ options, onSelect }) {
               key={option}
               className="dropdown-item"
               
-              onClick={() => handleOptionClick(option)}
+              onClick={() => handleOptionClick(option)
+              }
             >
               {option}
             </div>
